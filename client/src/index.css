@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paddy: #2E7D32;
+  --color-turmeric: #FBC02D;
+  --color-earth: #6D4C41;
+  --color-sky: #81D4FA;
+  --color-cream: #FFF8E1;
+  --font-tamil: "Noto Sans Tamil", sans-serif;
+}
+
+body {
+  font-family: 'Noto Sans Tamil', sans-serif;
+  background-color: #FFF8E1;
+  /* Light cream */
+}
