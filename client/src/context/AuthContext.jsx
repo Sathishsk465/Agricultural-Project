@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
                             Authorization: `Bearer ${token}`
                         }
                     };
-                    const res = await axios.get('http://localhost:5000/api/auth/me', config);
+                    const res = await axios.get('https://agricultural-project.onrender.com/api/auth/me', config);
                     setUser(res.data);
                 } catch (error) {
                     localStorage.removeItem('token');
@@ -31,7 +31,7 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (phone) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/login', { phone });
+            const res = await axios.post('https://agricultural-project.onrender.com/api/auth/login', { phone });
             localStorage.setItem('token', res.data.token);
             setUser(res.data);
             return { success: true };
@@ -42,7 +42,7 @@ export const AuthProvider = ({ children }) => {
 
     const register = async (userData) => {
         try {
-            const res = await axios.post('http://localhost:5000/api/auth/register', userData);
+            const res = await axios.post('https://agricultural-project.onrender.com/api/auth/register', userData);
             localStorage.setItem('token', res.data.token);
             setUser(res.data);
             return { success: true };
