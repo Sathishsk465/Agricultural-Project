@@ -36,7 +36,7 @@ const Home = () => {
             <PageHero
                 title="உழவன் உயர்வான்"
                 subtitle="தமிழ் விவசாயத்தின் டிஜிட்டல் புரட்சி"
-                image="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1600"
+                image="https://t3.ftcdn.net/jpg/05/06/67/42/240_F_506674297_qtx6eAVXgCmjXQ4vYMuqgBMK4ghhXUK3.jpg"
                 icon={Wheat}
             />
 
